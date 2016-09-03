@@ -2,6 +2,7 @@
 #include <ncurses.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 #include <math.h>
 
 static int newy = -1, newx = -1;	/* 记录新添加元素的位置 */
