@@ -1,3 +1,7 @@
+/*程序为解决约瑟夫环问题
+ *缺陷：ListDelete_L(LinkList &L) 函数删除的是 L结点的后一结点，而不是L结点
+ *     导致67--91行代码太复杂。
+ */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -15,7 +19,7 @@ LinkList CreateList_L(int Element_quantity);
  */
 
 bool ListDelete_L(LinkList &L);
-//
+//删除L结点之后一个结点
 
 int main()
  {
@@ -55,20 +59,39 @@ int main()
 			i++;
 		}
 	}
+	
+	printf("请输入初始密码：");
+	scanf("%d", &password);
 
 	p = people;
-	for (i = 0;i<people_quantity;i++)
+	for (i = 0;i<people_quantity;i++)                  //67--91行代码不简洁，没有可读性，需要改善
 	{
-		password = p->password;
-		for (j = 0;j<password-1;j++)
+		if (password == 1)                             //当password为1时不适用于83---88行代码通式
+		{
+			password = p->password;                    //将当前结点的值赋给参数，并在79行使用该参数
+			people_number = p->number;
+
+			q = p;                                     //寻找当前结点的上一个结点并做删除处理
+			while(q->next != p)
+				q = q->next;
+
+			ListDelete_L(q);
+			printf("%d ", people_number);
+			continue;
+		}
+
+		for (j = 0;j<password-2;j++)                    //其中 password-2 用于处理 LinkDelete_L(LinkList &L) 只能删除L结点之后的一个结点缺陷
 			p = p->next;
-		password = p->password;
-		people_number = p->number;
-		q = p; p = p->next;
-		ListDelete_L(q);
+
+		password = p->next->password;
+		people_number = p->next->number;
+		q = p; ListDelete_L(q); p = p->next;
+
 		printf("%d ", people_number);
 	}
 
+	printf("\n");
+	
  	free(people);
 	
  	return 0;
