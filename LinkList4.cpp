@@ -55,12 +55,12 @@ int main()
 		bool Is_Equal = false;
 		for (j = 0;j<Polynomial_one_Length-1;j++)
 		{
-			//printf("%.2lf %.2lf\n", p->The_Coefficient, The_Coefficient);
+			//printf("%.2lf %.2lf\n", p->The_Coefficient_subtraction, The_Coefficient_subtraction);
 			if (The_Exponent == p->The_Exponent)
 			{
 				p->The_Coefficient += The_Coefficient;
 				p->The_Coefficient_subtraction -= The_Coefficient;
-				//printf("%.2lf\n", p->The_Coefficient);
+				//printf("%.2lf\n", p->The_Coefficient_subtraction);
 				Is_Equal = true;
 				p = p->next;
 				break;
