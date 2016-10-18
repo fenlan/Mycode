@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:background="@mipmap/add_friends_background"
+    android:paddingTop="16dp"
+    android:id="@+id/helllo"
+    tools:context="com.example.fenlan.chattool.Jchat_layout">
+
+    <Toolbar
+        android:id="@+id/chatting_toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:background="#14A0F0"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+    </Toolbar>
+
+    <Button
+        android:id="@+id/chatting_button_back"
+        android:background="@mipmap/btn_back"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignBottom="@+id/chatting_toolbar"
+        android:layout_alignParentStart="true" />
+
+   <!-- <TextView
+        android:id="@+id/refresh_text1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@mipmap/refresh1"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:clickable="true"
+        android:layout_marginEnd="25dp"
+        android:layout_margin="10dp"
+        android:layout_alignBottom="@+id/chatting_toolbar"
+        android:layout_alignParentEnd="true" />-->
+
+    <LinearLayout
+        android:id="@+id/chatting_layout"
+        android:orientation="vertical"
+        android:layout_below="@id/chatting_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <ListView
+            android:id="@+id/chatting_message_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"
+            android:transcriptMode="alwaysScroll"
+            android:layout_weight="1.17">
+        </ListView>
+
+        <TextView
+            android:id="@+id/Is_Empty1"
+            android:text="开始聊天吧"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.97" />
+
+        <LinearLayout
+            android:id="@+id/input_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <EditText
+                android:id="@+id/input_message"
+                android:layout_width="0dp"
+                android:layout_weight="13"
+                style="@style/Base.V12.Widget.AppCompat.EditText"
+                android:background="@drawable/input_background"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/send_message"
+                android:layout_weight="2"
+                android:background="@drawable/ic_menu_send"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Chatting_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_alignTop="@+id/chatting_button_back"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

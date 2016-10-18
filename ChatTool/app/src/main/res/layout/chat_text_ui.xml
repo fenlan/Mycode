@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/left_tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="00:00"/>
+
+
+        <ImageView
+            android:id="@+id/left_iv_portrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/left_tv_time"
+            android:layout_margin="10dp"
+            android:src="@mipmap/your_head_image"
+            />
+
+
+        <TextView
+            android:id="@+id/left_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="name"
+            android:layout_below="@+id/left_tv_time"
+            android:layout_alignStart="@+id/left_tv_content" />
+
+        <TextView
+            android:id="@+id/left_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/left_tv_name"
+            android:layout_toRightOf="@+id/left_iv_portrait"
+            android:background="@drawable/text_sel"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:text="hi,my name is xxx. What's your name?"
+            android:textColor="@color/window_white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_below="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/right_tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="00:00"/>
+
+
+        <ImageView
+            android:id="@+id/right_iv_portrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/right_tv_time"
+            android:layout_margin="10dp"
+            android:src="@mipmap/your_head_image"
+            />
+
+
+        <TextView
+            android:id="@+id/right_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="name"
+            android:layout_below="@+id/right_tv_time"
+            android:layout_alignEnd="@+id/right_tv_content" />
+
+        <TextView
+            android:id="@+id/right_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/right_tv_name"
+            android:layout_toLeftOf="@+id/right_iv_portrait"
+            android:background="@drawable/text_sel"
+            android:gravity="center|right"
+            android:padding="10dp"
+            android:text="hi,my name is xxx. What's your name?"
+            android:textColor="@color/window_white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

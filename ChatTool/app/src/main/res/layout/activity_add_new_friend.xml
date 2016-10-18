@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.fenlan.chattool.Add_new_friend">
+
+    <Toolbar
+        android:id="@+id/Friend_ListToolBar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:background="@mipmap/add_friends_background"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+    </Toolbar>
+
+    <Button
+        android:id="@+id/button_back"
+        android:background="@mipmap/btn_back"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignBottom="@+id/Friend_ListToolBar"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:id="@+id/add_friend_layout"
+        android:background="@mipmap/add_friends_background"
+        android:layout_below="@id/Friend_ListToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textview"
+            android:text="添加好友"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="44dp" />
+
+        <LinearLayout
+            android:layout_below="@id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout">
+
+            <ImageView
+                android:background="@mipmap/friend_head"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/add_friend_name"
+                android:hint="username"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@mipmap/inputmodel" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:background="@mipmap/friend_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout" />
+
+        <EditText
+            android:id="@+id/add_friend_reason"
+            android:hint="why add me as a friend?"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@mipmap/inputmodel"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignEnd="@+id/linearLayout"
+            android:layout_toEndOf="@+id/imageView" />
+
+
+
+        <Button
+            android:id="@+id/add_friend_button"
+            android:text="添     加"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_background"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="126dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

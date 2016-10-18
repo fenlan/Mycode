@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.fenlan.chattool.MainActivity"
+    android:background="#00ffffff">
+
+    <Toolbar
+        android:id="@+id/LoginToolBar"
+        android:background="@mipmap/add_friends_background"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/AppInformation"
+            android:text="IM"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </Toolbar>
+
+    <LinearLayout
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@mipmap/add_friends_background"
+        android:layout_below="@id/LoginToolBar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/loginTip"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/chat_tool_logo1xiufu"
+            android:textSize="25sp"
+            android:textColor="#050101"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="name"
+            android:gravity="center"
+            android:background="@mipmap/inputmodel2"
+            android:layout_marginTop="42dp"
+            android:layout_below="@+id/loginTip"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@mipmap/inputmodel2"
+            android:hint="Password"
+            android:gravity="center"
+            android:layout_below="@id/inputName"
+            android:layout_marginTop="30dp"
+            android:inputType="textPassword"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:id="@+id/ButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:layout_weight="0.07">
+
+            <Button
+                android:id="@+id/NewerRegisterButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_background"
+                android:text="注    册"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="登     录"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_background"
+                android:layout_gravity="center_vertical"
+                android:layout_alignTop="@+id/NewerRegisterButton"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

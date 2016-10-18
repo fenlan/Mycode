@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.fenlan.chattool.Friend_List">
+
+    <Toolbar
+        android:id="@+id/Friend_ListToolBar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:background="#14A0F0"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <!--<ImageView
+            android:id="@+id/Your_Head_Image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@mipmap/friend_head"/>-->
+
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/Add_Your_Friend"
+        android:background="@mipmap/add_friends"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/refresh_text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:id="@+id/your_name"
+        android:text="friends"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/Add_Your_Friend"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/Your_Friends_List"
+        android:orientation="vertical"
+        android:background="@color/window_background"
+        android:layout_below="@id/Friend_ListToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/Your_Friends_ListView"
+            android:background="@mipmap/friend_list_background2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/refresh_text"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@mipmap/refresh1"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:clickable="true"
+        android:layout_marginEnd="25dp"
+        android:layout_margin="10dp"
+        android:layout_alignBottom="@+id/Friend_ListToolBar"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

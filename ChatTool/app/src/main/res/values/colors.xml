@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="window_background">#00ffffff</color>
+    <color name="window_white">#FFFFFF</color>
+    <color name="tran">#00000000</color>
+    <color name="blue">#14A0F0</color>
+
+    <color name="StatusbarColor">#0F7D58</color>
+    <color name="ToolbarColor">#0F9D58</color>
+    <color name="ChattingColor">#33AC71</color>
+    <color name="ButtonGreenColorNomal">#0F9D58</color>
+    <color name="ButtonGreenColorPress">#33AC71</color>
+
+    <color name="tip_red">#ec4e4e</color>
+    <color name="transparent">#00000000</color>
+</resources>
