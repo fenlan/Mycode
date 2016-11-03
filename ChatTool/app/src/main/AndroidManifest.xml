@@ -135,7 +135,7 @@
         <!-- Required. AppKey copied from Portal -->
         <meta-data
             android:name="JPUSH_APPKEY"
-            android:value="1bc4ebefae178e1c3acdf86d" />
+            android:value="" />
 
         <activity android:name=".Add_new_friend" />
         <activity
