@@ -74,19 +74,19 @@ bool Delect(BST &root, ElemType key){
 }//Delect
 
 bool Delect_node(BST &node){
-    if (!node->Rchild){
+    if (!node->Rchild){                  //右子树为空，接左子树
         BST q = node;
         node = node->Lchild;
         free(q);
     }
-    else if (!node->Lchild){
+    else if (!node->Lchild){             //左孩子为空，接右子树
         BST q = node;
         node = node->Rchild;
         free(q);
     }
-    else {
+    else {                                //左右子树均不为空，取左子树中最大值赋值给结点
         BST q = node, s = node->Lchild;
-        while (s->Rchild) {
+        while (s->Rchild) {               //从左子树往下一直取右子树到最下角，该值为左子树中最大的子树
             q = s;
             s = s->Rchild;
         }
