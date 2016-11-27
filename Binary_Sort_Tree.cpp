@@ -1,7 +1,6 @@
 /*Author:fenlan
   function:use Binary Sort Tree to search
   date:2016.11.27
-  tip:需要添加注释，时间原因没有添加注释
 */
 #include <stdio.h>
 #include <stdlib.h>
