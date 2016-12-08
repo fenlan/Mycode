@@ -39,7 +39,7 @@ int main (){
     printf("\n");
     printf("address = %d\n", address);                   //test
 
-    if (Di_Gui_Search(data, 53, address, 0, data->length-1) == false)
+    if (Di_Gui_Search(data, 76, address, 0, data->length-1) == false)
         printf("fail to search the elem!\n");
     else
         printf("The address is %d\n", address);
@@ -49,16 +49,27 @@ int main (){
 
 bool GetData(DATA &data, char *FileName){
     FILE *file;
-    file = fopen(FileName, "r");
+    file = fopen(FileName, "a+");
     int i = 0, j = 0;
 
-    if (file == NULL)           return false;
+    if ((fscanf(file,"%d", &data[0].elem) != 1)){
+        printf("This file if empty!     Please enter data into the file\n");
+        for (i = 0;;i++){
+            scanf("%d", &data[i].elem);
+            if (data[i].elem == 0)    break;
+            else     fprintf(file, "%d ", data[i].elem);
+        }
+        data->length = i;
+        fclose(file);
+        return true;
+    }
     else{
         for (i = 0;;i++){
             if (fscanf(file,"%d", &data[i].elem) != 1) break; //读取int 类型数据
             //printf("%d ", data[i]);
         }
         data->length = i;
+        fclose(file);
         return true;
     }
 }
@@ -82,8 +93,6 @@ bool Sequential_Search(DATA &data, ElemType elem, int &address){
 bool Di_Gui_Search(DATA &data, ElemType elem, int &address, int low, int high){
     int middle = 0;
     middle = (low + high) / 2;
-
-    printf("low = %d  high = %d\n", low, high);             //test
 
     if (low > high)            return false;
     else if (data[middle].elem == elem){
