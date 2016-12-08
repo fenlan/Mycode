@@ -44,6 +44,7 @@ int main (){
     else
         printf("The address is %d\n", address);
 
+    free(data);
     return 0;
 }
 
