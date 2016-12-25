@@ -1,6 +1,6 @@
 /*Author:fenlan
  *function: Quick Sort
- *data:2016-12-21
+ *date:2016-12-21
  */
 #include <stdio.h>
 #include <stdlib.h>
