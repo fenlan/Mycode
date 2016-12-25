@@ -30,7 +30,7 @@ int main()
     init();
 	if(Bellman_Ford())                        //最短路径有解打印源点到各顶点的最短距离
 		for(int i = 1 ;i <= Nodenum; i++){
-			printf("the shortest path length: %d ", dist[i]);
+			printf("Node: %d  the shortest path length: %d  ", i, dist[i]);
 			//以下代码单纯为了输出规范结果，不是核心算法
 			int prev = prev_node[i];
 			int j = 1;
