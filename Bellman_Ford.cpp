@@ -13,9 +13,10 @@ typedef struct Edge{
 	int weight;                         // 边的权值
 }Edge;
 
-Edge edge_array[MAXNODE];                    // 保存边的值
-int dist[MAXNODE];                         // 结点到源点最小距离
-int Nodenum, Edgenum, source;               // 结点数，边数，源点
+Edge edge_array[MAXNODE] = {0};                    // 保存边的值
+int dist[MAXNODE] = {0};                          // 结点到源点最小距离
+int Nodenum, Edgenum, source;                     // 结点数，边数，源点
+int prev_node[MAXNODE] = {0};                     // 某顶点最短路径的前一个顶点
 
 void init();
 // 初始化图
@@ -28,8 +29,20 @@ int main()
 {
     init();
 	if(Bellman_Ford())                        //最短路径有解打印源点到各顶点的最短距离
-		for(int i = 1 ;i <= Nodenum; i++)
-			printf("%d ", dist[i]);
+		for(int i = 1 ;i <= Nodenum; i++){
+			printf("the shortest path length: %d ", dist[i]);
+			//以下代码单纯为了输出规范结果，不是核心算法
+			int prev = prev_node[i];
+			int j = 1;
+			printf("shortest path:%d->", i);
+			while (i != source && prev != source){
+				printf("%d->", prev);
+				prev = prev_node[prev];
+				if (++j > Nodenum)     break;
+			}
+			printf("%d", source);
+			printf("\n");
+		}
 
     printf("\n");
 
@@ -46,8 +59,11 @@ void init(){
     scanf("%d", &source);
 
     //算法第一步：初始化所有点。每一个点保存一个值，表示从原点到达这个点的距离，将原点的值设为0，其它的点的值设为无穷大（表示不可达）
-	for(int i=1; i<=Nodenum; ++i)          //初始化各节点的路径长度
-		dist[i] = MAXINT;
+	for(int i=1; i<=Nodenum; ++i) {                //初始化各节点的路径长度
+ 		dist[i] = MAXINT;
+		prev_node[i] = source;                     //默认将所有顶点的最短路径前一顶点指向源点，（不推荐这样用，这里只是为了方便最后输出）
+	}
+
 	dist[source] = 0;                     //将源点的路径长度设为0
 	for(int i=1; i<=Edgenum; ++i){
         printf("Enter edge_array[%d].u:", i);
@@ -63,8 +79,11 @@ void init(){
 }
 
 void relax(int u, int v, int weight){
-	if(dist[v] > dist[u] + weight)
+	if(dist[v] > dist[u] + weight){
 		dist[v] = dist[u] + weight;
+		prev_node[v] = u;
+	}
+
 }
 
 bool Bellman_Ford(){
