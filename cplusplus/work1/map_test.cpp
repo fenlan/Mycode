@@ -24,7 +24,7 @@ int main() {
 
 	cout << "Enter <name, value> pair: ";
 
-    while (true) {
+	while (true) {
 		cin >> name;
 		cin >> value;
 
@@ -33,10 +33,10 @@ int main() {
 		my_map[name].push_back(value);
 		sum += value;
 		i++;
-    }
-
+	}
+	
 	map<string, val>::iterator Map_Itr;
-    for (Map_Itr = my_map.begin(); Map_Itr != my_map.end(); Map_Itr++) {
+	for (Map_Itr = my_map.begin(); Map_Itr != my_map.end(); Map_Itr++) {
 		int i = 0;
 		double each_sum = 0, each_mean = 0;
 
