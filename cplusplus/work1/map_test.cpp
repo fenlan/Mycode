@@ -23,7 +23,7 @@ int main() {
 	double sum = 0, mean = 0;
 
 	cout << "Enter <name, value> pair: ";
-    
+
     while (true) {
         cin >> name;
         cin >> value;
@@ -35,21 +35,23 @@ int main() {
 		i++;
 
     }
-	
+
     map<string, val>::iterator Map_Itr;
     for (Map_Itr = my_map.begin(); Map_Itr != my_map.end(); Map_Itr++) {
         int i = 0;
 		double each_sum = 0, each_mean = 0;
 
 		cout << "name: " << Map_Itr->first;
+
         for (i =  0; i < (Map_Itr->second).size(); i++)
         	each_sum += Map_Itr->second[i];
+
 		each_mean = each_sum / i;
 		cout << "  sum = " << each_sum << " mean = " << each_mean << endl;
     }
-	
+
 	mean = sum / i;
 	cout << "all sum = " << sum << " all mean = " << mean << endl;
-    
+
     return 0;
 }
