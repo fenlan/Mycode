@@ -22,13 +22,12 @@ int main() {
 	MAP my_map;
 	double sum = 0, mean = 0;
 
-	cout << "Enter <name, value> pair: ";
+	cout << "Enter <name, value> pair, end with 'end' ";
 
 	while (true) {
 		cin >> name;
+		if (name == "end")     break;
 		cin >> value;
-
-		if (value == 0)     break;
 
 		my_map[name].push_back(value);
 		sum += value;
