@@ -16,35 +16,34 @@ typedef vector<double> val;
 typedef map<string, val> MAP;
 
 int main() {
-    string name;
+	string name;
 	int i = 0;
-    double value = 0;
-    MAP my_map;
+	double value = 0;
+	MAP my_map;
 	double sum = 0, mean = 0;
 
 	cout << "Enter <name, value> pair: ";
 
     while (true) {
-        cin >> name;
-        cin >> value;
+		cin >> name;
+		cin >> value;
 
-        if (value == 0)     break;
+		if (value == 0)     break;
 
-        my_map[name].push_back(value);
+		my_map[name].push_back(value);
 		sum += value;
 		i++;
-
     }
 
-    map<string, val>::iterator Map_Itr;
+	map<string, val>::iterator Map_Itr;
     for (Map_Itr = my_map.begin(); Map_Itr != my_map.end(); Map_Itr++) {
-        int i = 0;
+		int i = 0;
 		double each_sum = 0, each_mean = 0;
 
 		cout << "name: " << Map_Itr->first;
 
         for (i =  0; i < (Map_Itr->second).size(); i++)
-        	each_sum += Map_Itr->second[i];
+			each_sum += Map_Itr->second[i];
 
 		each_mean = each_sum / i;
 		cout << "  sum = " << each_sum << " mean = " << each_mean << endl;
