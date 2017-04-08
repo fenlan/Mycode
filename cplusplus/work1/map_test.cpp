@@ -41,13 +41,13 @@ int main() {
 		double each_sum = 0, each_mean = 0;
 
 		cout << "name: " << Map_Itr->first;
-
-        for (i =  0; i < (Map_Itr->second).size(); i++)
+		
+		for (i =  0; i < (Map_Itr->second).size(); i++)
 			each_sum += Map_Itr->second[i];
 
 		each_mean = each_sum / i;
 		cout << "  sum = " << each_sum << " mean = " << each_mean << endl;
-    }
+	}
 
 	mean = sum / i;
 	cout << "all sum = " << sum << " all mean = " << mean << endl;
