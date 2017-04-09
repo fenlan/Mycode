@@ -1,9 +1,11 @@
 /* Author: fenlan
  * Date: 2017.4.8
- * Describe: Read a sequence of possibly whitespace-separated(name, value)
+ * ----------------------------------------------------------------------
+ *   Read a sequence of possibly whitespace-separated(name, value)
  * pairs, where the name is a single whitespace-separated word and the
  * value is an integer or a floating-point value. Compute and print the sum
  * and mean for each name and the sum and mean for all names.
+ * ----------------------------------------------------------------------
  */
 
 #include <iostream>
