@@ -1,3 +1,16 @@
+/* Author: fenlan
+ * Date: 2017.4.9
+ * ----------------------------------------------------
+ *   write a function atoi(const char*) that takes a
+ * C-style string containing digits and returns the
+ * corresponding int. For example, aroi("123") is 123.
+ * Modify atoi() to handle c++ octal and hexadecimal
+ * notation in addition to plain decimal numbers. Modify
+ * atoi() to handle the c++ character constant notation.
+ * ----------------------------------------------------
+ */
+
+
 #include <iostream>
 #include <vector>
 #include <cctype>
