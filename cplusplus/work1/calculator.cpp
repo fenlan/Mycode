@@ -1,3 +1,16 @@
+/* Author: fenlan
+ * Date: 2017.4.18
+ * ---------------------------------------------
+ *   A desk calculator that provides the four
+ * standard arithmetic operations as infix
+ * operators on floating-point numbers. The user
+ * can also define varibles. The calculator
+ * consists of four main parts: a parser, an 
+ * input function, a symbol table, and a driver.
+ * ---------------------------------------------
+ */
+
+
 #include <iostream>
 #include <string>
 #include <cctype>
