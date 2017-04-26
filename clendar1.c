@@ -1,33 +1,33 @@
-#include <stdio.h> 
+#include <stdio.h>
 # include <stdlib.h>
 
-void main() 
-{ 
-	int i,j,k,year,week; 
-	int day[]={31,28,31,30,31,30,31,31,30,31,30,31}; 
-	char month[12][10]={"January","February","March","April","May","June","July","August","September","October","November","December"}; 
+void main()
+{
+	int i,j,k,year,week;
+	int day[]={31,28,31,30,31,30,31,31,30,31,30,31};
+	char month[12][10]={"January","February","March","April","May","June","July","August","September","October","November","December"};
 
-	printf("Input year you want to print:"); 
-	scanf("%d",&year); 
+	printf("Input year you want to print:");
+	scanf("%d",&year);
 
-	if((year%4==0&&year%100!=0)||(year%400==0)) day[1]++; //ÅÐ¶ÏÊÇ·ñÈòÄê
-	week=(35+year+year/4-year/100+year/400)%7; //¼ÆËãµ±ÄêµÄ1ÔÂ1ÈÕÊÇÖÜ¼¸µÄ¹«Ê½ 
+	if((year%4==0&&year%100!=0)||(year%400==0)) day[1]++; //ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½
+	week=(35+year+year/4-year/100+year/400)%7; //ï¿½ï¿½ï¿½ãµ±ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½Ü¼ï¿½ï¿½Ä¹ï¿½Ê½ 
 
-	for(i=0;i<12;i++) 
-	{ 
-		printf("\n%s\n",month[i]); //Êä³öÔÂ·ÝµÄÓ¢ÎÄ
-		printf("Sun Mon Tue Wed Thu Fri Sat\n"); //Êä³ö±íÍ·
-	for(k=0;k<week;k++) printf(" "); //Ã¿ÔÂÒ»ºÅ¶ÔÆëËüµÄÐÇÆÚÊý
-	for(j=1;j<=day[i];j++) 
-	{ 
-		printf("%3d ",j); 
-	if(++week>=7) 
-	{ 
-		printf("\n"); 
-		week=week%7; 
-	} 
-} 
-printf("\n"); 
-} 
+	for(i=0;i<12;i++)
+	{
+		printf("\n%s\n",month[i]); //ï¿½ï¿½ï¿½ï¿½ï¿½Â·Ýµï¿½Ó¢ï¿½ï¿½
+		printf("Sun Mon Tue Wed Thu Fri Sat\n"); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·
+	for(k=0;k<week;k++) printf(" "); //Ã¿ï¿½ï¿½Ò»ï¿½Å¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	for(j=1;j<=day[i];j++)
+	{
+		printf("%3d ",j);
+	if(++week>=7)
+	{
+		printf("\n");
+		week=week%7;
+	}
+}
+printf("\n");
+}
 	system("pause");
 }

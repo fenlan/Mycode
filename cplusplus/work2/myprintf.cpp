@@ -6,7 +6,8 @@
  * string containing %s, %c, and %d
  * directives and an arbitrary number
  * of arguments. Don't use printf().
- * Use <cstdarg>
+ * Use <cstdarg>.
+ * -----------------------------------
  */
 
 #include <iostream>
