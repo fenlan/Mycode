@@ -15,7 +15,6 @@
 using namespace std;
 
 const int MAX = 1000;
-
 class Histogram {
 	short int count[MAX] = {0};
 	short int max_value, min_value;
