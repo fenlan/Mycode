@@ -1,3 +1,15 @@
+/* Author: fenlan
+ * Date: 2017.5.2
+ * -------------------------------------------
+ *  define a class Expr to handle expression
+ * -------------------------------------------
+ *  input: 
+ *  		2+4*(5+5)
+ *  output:
+ *			42
+ * -------------------------------------------
+ */
+
 #include "calculator.hpp"
 #include <iostream>
 #include <string>
