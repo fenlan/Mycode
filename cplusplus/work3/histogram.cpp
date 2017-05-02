@@ -1,12 +1,12 @@
 /* Author: fenlan
  * Date: 2017.5.2
  * -----------------------------------------------
- * 		define a class Histogram to get the data
- *	statistical
+ *  	define a class Histogram to get the data
+ *  statistical
  * -----------------------------------------------
  * input:
  * 		3 4 5 3 6 3 6 9
- * 	output:
+ * output:
  * 		3->3 4->1 5->1 6->2 9->1
  * -----------------------------------------------
  */
