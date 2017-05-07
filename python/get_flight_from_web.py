@@ -12,4 +12,5 @@ for i in td.find_all('tr'):
     #print(i.contents[1].contents[1].contents[1].contents[0])    #get flight_name
     #print(i.contents[3].contents[1].contents[0])                #get flight_source_time
     #print(i.contents[7].contents[1].contents[0])                #get flight_arr_time
-    print(i.contents[13].contents[1].contents[1])                #get price
+    if len(i.contents[13].contents) > 1:                         #get price
+        print(i.contents[13].contents[1].contents[1])
