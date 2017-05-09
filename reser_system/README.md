@@ -1,6 +1,8 @@
 ## reservation system
 A simply program of reservation system, based on python and mysql.
+
 Made just for fun. Play it here!
+
 My teacher of Databses System Concepts gives the idea for me.
 
 ### how to use
