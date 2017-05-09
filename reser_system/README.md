@@ -49,4 +49,4 @@ My teacher of Databses System Concepts gives the idea for me.
                 ----BusID           numeric(10)
 
 # Update
-There are some faluts, and need to modify and add some other function
+There are some faluts, and need to modify and add some other functions
