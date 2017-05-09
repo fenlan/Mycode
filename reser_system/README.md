@@ -1,4 +1,4 @@
-## reservation system
+# Reservation system
 A simply program of reservation system, based on python and mysql.
 
 Made just for fun. Play it here!
@@ -13,7 +13,7 @@ My teacher of Databses System Concepts gives the idea for me.
 - run `insert_hotels_data.py` to insert hotels information
 - At last run `reser.py` to book your travel route
 
-## Tables
+# Tables
 	Flight----------AirlineID       numeric(10)    PRIMARY KEY
                 ----AirNum          char(10)
                 ----Source          char(20)
@@ -48,5 +48,5 @@ My teacher of Databses System Concepts gives the idea for me.
                 ----HotelID         numeric(10)
                 ----BusID           numeric(10)
 
-## Update
+# Update
 There are some faluts, and need to modify and add some other function
