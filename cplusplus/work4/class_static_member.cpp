@@ -1,7 +1,7 @@
 /* --------------------------------------------------
  * 	Author: fenlan
  * 	Date: 2017.5.14
- * 	Desc: I can not sure the program is true
+ * 	Desc: I can not sure the program is correct
  * --------------------------------------------------
  *  	Define two classes, each with a static member,
  *  so that the construction of each static member
