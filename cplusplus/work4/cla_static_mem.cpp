@@ -2,7 +2,7 @@
  *	Author: fenlan
  *	Date: 2017.5.17
  * ------------------------------------------------------------
- *		Define two class with static member, so that each
+ *	  Define two class with static member, so that each
  *	constructor of class involves a reference to other.
  *
  *	Father(Son* son, father_name);
