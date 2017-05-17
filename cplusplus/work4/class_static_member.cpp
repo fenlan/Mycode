@@ -1,56 +1,46 @@
-/* --------------------------------------------------
- * 	Author: fenlan
- * 	Date: 2017.5.14
- * 	Desc: I can not sure the program is correct
- * --------------------------------------------------
- *  	Define two classes, each with a static member,
- *  so that the construction of each static member
- *  involves a reference to the other.
- * --------------------------------------------------
- */
-
-
 #include <iostream>
 using namespace std;
-
-class Obj1 {
-	//static int default_value;
-public:
-	static int& default_value;
-	Obj1(int value) {
-		default_value = value;    
-	}
-	void print() {
-		cout << default_value << endl;    
-	}
-};
-
-class Obj2 {
-	//static int default_value;
-public:
-	static int& default_value;
-	Obj2(int value) {
-		default_value = value;    
-	}
-	void print() {
-		cout << default_value << endl;    
-	}
-};
-
-int j = 0;
-int& Obj1::default_value = j;
-int& Obj2::default_value = Obj1::default_value;
-
-int main()
+class son;
+class father
 {
-	Obj1 a(1);
-	Obj2 b(2);
-	Obj1 c(3);
-	Obj2 d(4);
-	a.print();
-	b.print();
-	c.print();
-	d.print();
+public:
+	char *Fname;
+	static son * s;
+	father(son *son, char* name) { s = son; Fname = name; }
+	void change(son *st) { s = st; }
+	void print();
+};
+class son
+{
+public:
+	char *Sname;
+	static father *f;
+	son(father *far, char *name) { f = far; Sname = name; }
+	void print();
+};
+void father::print()
+{
+	cout << "the father's name:" << Fname << endl
+		<< "his son's name:" << s->Sname << endl;
+}
+void son::print()
+{
+	cout << "the son's name:" << Sname << endl
+		<< "his father's name:" << f->Fname << endl;
+}
+son* father::s = NULL;
+father* son::f = NULL;
 
-	return 0;
+void main()
+{
+	char name1[10], name2[10];
+	cout << "input father's name:";
+	cin >> name1;
+	father f(NULL, name1);
+	cout << "input son's name:";
+	cin >> name2;
+	son s(&f, name2);
+	f.change(&s);
+	s.print();
+	f.print();
 }
