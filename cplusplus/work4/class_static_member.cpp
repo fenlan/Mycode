@@ -1,3 +1,11 @@
+/*
+ ****************************************************************
+	Define two class with static member, so that each constructor
+  of class involves a reference to other.
+ *****************************************************************
+ */
+
+
 #include <iostream>
 using namespace std;
 class son;
