@@ -2,7 +2,7 @@
  * 	Author: fenlan
  * 	Date: 2017.5.22
  * ---------------------------------------------------
- *  operator overloading
+ * 	operator overloading
  * ---------------------------------------------------
  */
 
@@ -16,7 +16,7 @@ struct X {
 	//X(int i):i(i) {cout << "debug" << endl;}
 	X operator+(int i) {
 		cout << "x_plus" << "---->";
-		return X(this->i + i);    
+		return X(this->i + i);
 	}
 };
 
@@ -26,20 +26,20 @@ struct Y {
 	//Y(X x):i(x.i) {cout << "debug" << endl;}
 	Y operator+(X x) {
 		cout << "y_plus_x" << "---->";
-		return Y(this->i + x.i);    
+		return Y(this->i + x.i);
 	}
 	operator int() {
 		cout << "int_y" << "---->";
-		return i;    
+		return i;
 	}
 };
 
 X operator*(X x, Y y) {
 	cout << "operator *" << "---->";
-	return X(x.i * y.i);    
+	return X(x.i * y.i);
 };
 int f(X x) {
-	return x.i;    
+	return x.i;
 };
 
 X x = 1;
@@ -57,5 +57,5 @@ int main()
 	//cout << f(y) << endl;//incalid: could not convert 'y' from 'Y' to 'X'
 	cout << y + y << endl;
 	cout << 106 + y << endl;
-	return 0;    
+	return 0;
 }
