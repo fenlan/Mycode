@@ -23,7 +23,8 @@ public:
     char read(int i) const;
     void write(int i, char c);
 
-    Cref operator[] (int i);
+
+    //Cref operator[] (int i);
     char operator[] (int i) const;
 
     int size() const;

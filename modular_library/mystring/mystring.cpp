@@ -85,7 +85,7 @@ void String::check(int i) const { if (i<0 || rep->sz<=i) throw Range(); }
 char String::read(int i) const { return rep->s[i]; }
 void String::write(int i, char c) { rep=rep->get_own_copy(); rep->s[i]=c; }
 
-String::Cref String::operator[](int i) { check(i); return Cref(*this, i); }
+//String::Cref String::operator[](int i) { check(i); return Cref(*this, i); }
 char String::operator[](int i) const { check(i); return rep->s[i]; }
 int String::size() const { return rep->sz; }
 
