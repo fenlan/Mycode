@@ -47,7 +47,7 @@ cout << x << " / " << y << " = " << x / y << endl;
 >	[1,2,3,4] / [2,2,2,2] = [0.5,1,1.5,2]
 
 ## Reference
-[2]this guy's program [bretternst](https://github.com/bretternst/tcpppl_answers/blob/master/ch11/ex15.cpp)
+[1]this guy's program [bretternst](https://github.com/bretternst/tcpppl_answers/blob/master/ch11/ex15.cpp)
 
 ## Update
 `2015.5.23` There is minimal math vector class. If possible, add more later
