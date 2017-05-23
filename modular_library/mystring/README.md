@@ -46,5 +46,4 @@ cout << str1 + str2 << endl;
 [2]this guy's program [bretternst](https://github.com/bretternst/tcpppl_answers/blob/master/ch11/string.cpp)
 
 ## Update
-There is minimal string class. If possible, add more later
-`2015.5.23`
+`2015.5.23`There is minimal string class. If possible, add more later
