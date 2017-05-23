@@ -29,8 +29,11 @@ cout << str2 << endl;
 ```
 `output`
 > b
+>
 > abc
+>
 > abc
+>
 > abc
 
 ## Reference
@@ -40,3 +43,4 @@ cout << str2 << endl;
 
 ## Update
 There is minimal string class. If possible, add more later
+*2015.5.23*
