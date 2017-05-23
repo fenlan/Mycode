@@ -76,9 +76,9 @@ String& String::operator=(const String& s) {        // copy assignment
     return *this;
 }
 
-String::~String() {           // need your help, I have a little difficultice
+String::~String() {
     if(--(rep->n) == 0) delete rep;
-    cout << rep->n <<" desconstructor\n";
+    cout << rep->n <<" desconstructor\n";       // remove this statement if you use this class
 }
 
 void String::check(int i) const { if (i<0 || rep->sz<=i) throw Range(); }

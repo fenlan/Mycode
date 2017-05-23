@@ -14,6 +14,24 @@ Here is a more realistic version of class `String`. I copy the interfaces from `
 - `read(i) const`: read a char of string
 - `write(i, c)`: write c value in string
 - `size()`: return size of string
+- `string[]`: get a char from a string
+
+## Example
+```
+String str = "abc";
+String str1 = "edc";
+String str2 = str;
+str1 = str;
+cout << str[1] << endl;
+cout << str << endl;
+cout << str1 << endl;
+cout << str2 << endl;
+```
+`output`
+> b
+> abc
+> abc
+> abc
 
 ## Reference
 [1]the c++ programming language(special edition) by Bjarne Stroustrup
