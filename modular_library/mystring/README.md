@@ -17,6 +17,7 @@ Here is a more realistic version of class `String`. I copy the interfaces from `
 
 ## Reference
 [1]the c++ programming language(special edition) by Bjarne Stroustrup
+
 [2]this guy's program [bretternst](https://github.com/bretternst/tcpppl_answers/blob/master/ch11/string.cpp)
 
 ## Update
