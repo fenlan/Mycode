@@ -1,6 +1,5 @@
 # <p align="center">String</p>
 [TOC]
-
 ## A String Class
 Here is a more realistic version of class `String`. I copy the interfaces from `the c++ programming language(special edition)`. This string provides value semantics, character read and write operations, checked and unchecked access, stream I/O, literal strings as literals, and equality and concatenation operators. It represents string as C-style, zero-terminated arrays of characters and uses reference counts to minimize copying.
 
