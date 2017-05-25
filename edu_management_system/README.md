@@ -21,21 +21,21 @@
 
 ## Entity Sets
 profession<br>
-![profession](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/profession.png)
+![profession](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/profession.png)<br>
 student<br>
-![student](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/student.png)
+![student](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/student.png)<br>
 class<br>
-![class](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/class.png)
+![class](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/class.png)<br>
 teacher<br>
-![teacher](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/teacher.png)
+![teacher](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/teacher.png)<br>
 course<br>
-![course](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/course.png)
+![course](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/course.png)<br>
 electives<br>
-![electives](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/electives.png)
+![electives](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/electives.png)<br>
 teaching plan<br>
-![teaching plan](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/teaching_plan.png)
+![teaching plan](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/teaching_plan.png)<br>
 score<br>
-![score](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/score.png)
+![score](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/score.png)<br>
 
 ## Participant
 Design E-R diagram and entity sets with this guy [fanzhonghao](https://github.com/fanzhonghao)
