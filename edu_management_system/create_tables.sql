@@ -50,11 +50,11 @@ CREATE TABLE electives (
 );
 
 CREATE TABLE teaching_plan (
-	profession		CHAR(30),
-	major_credits	NUMERIC(2),
-	limit_minor_credits		NUMERIC(2),
-	minor_credits	NUMERIC(2),
-	grade			CHAR(10),
+	profession		       CHAR(30),
+	major_credits          NUMERIC(2),
+	limit_minor_credits    NUMERIC(2),
+	minor_credits          NUMERIC(2),
+	grade                  CHAR(10),
 	FOREIGN KEY (profession) REFERENCES profession(name)
 );
 
