@@ -6,8 +6,8 @@
 - 系里对每个专业每年都制定教学计划，学生每年必须按照计划修完一定学分的课程（必修课、限选课和任选课），如2000年入学的学生大三上学期必修30学分，限选课10学分，任选课6学分。
 - 系里的教师可以给多个班带课，但不能给一个班带多门课。
 - 一门课程最多允许学生一次补考，学生达到如下条件之一的被开除：
-> 一学期不及格的必修课学分超过10个
-> 不及格必修课学分累计超过30个
+> 一学期不及格的必修课学分超过10个<br>
+> 不及格必修课学分累计超过30个<br>
 > 不及格选修课学分累计超过20个
 
 ## Using
@@ -20,19 +20,21 @@
 ![E-R diagram](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/E-R.png)
 
 ## Entity Sets
-profession
+profession<br>
 ![profession](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/profession.png)
-student
+student<br>
 ![student](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/student.png)
-class
+class<br>
 ![class](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/class.png)
-teacher
+teacher<br>
 ![teacher](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/teacher.png)
+course<br>
 ![course](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/course.png)
+electives<br>
 ![electives](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/electives.png)
-teaching plan
+teaching plan<br>
 ![teaching plan](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/teaching_plan.png)
-score
+score<br>
 ![score](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/score.png)
 
 ## Participant
