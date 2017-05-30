@@ -3,7 +3,7 @@
     Author: fenlan
     Update: 2017.5.7
     function: Insert bus information into bus table
-    run: python get_bus_from_web.py host username password table
+    run: python get_bus_from_web.py host username password database
     ------------------------------------------------------------
     Bus-------------BusID           numeric(10)    PRIMARY KEY
                 ----BusNum          char(10)
@@ -30,21 +30,21 @@ def deal_time(time):
 
 def argv_check():
     if len(sys.argv) == 5:
-        global host, username, password, table
+        global host, username, password, database
         host = sys.argv[1]
         username = sys.argv[2]
         password = sys.argv[3]
-        table = sys.argv[4]
+        database = sys.argv[4]
     else :
         print('-------------------------------------------------------------')
-        print('please run--> python get_bus_from_web.py host username password table')
+        print('please run--> python get_bus_from_web.py host username password database')
         print('-------------------------------------------------------------')
         exit()
 
 host = ''
 username = ''
 password = ''
-table = ''
+database = ''
 
 argv_check()
 
@@ -58,7 +58,7 @@ soup = BeautifulSoup(html,"lxml")
 div = soup.find("div",id="carPasses")
 tbody = div.contents[1].contents[3]
 
-db = MySQLdb.connect(host, username, password, table)
+db = MySQLdb.connect(host, username, password, database)
 cursor = db.cursor()
 cursor.execute("DELETE FROM bus")
 db.commit()

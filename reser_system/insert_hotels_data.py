@@ -22,21 +22,21 @@ from datetime import *
 
 def argv_check():
     if len(sys.argv) == 5:
-        global host, username, password, table
+        global host, username, password, database
         host = sys.argv[1]
         username = sys.argv[2]
         password = sys.argv[3]
-        table = sys.argv[4]
+        database = sys.argv[4]
     else :
         print('-------------------------------------------------------------')
-        print('please run--> python insert_hotel_data.py host username password table')
+        print('please run--> python insert_hotel_data.py host username password database')
         print('-------------------------------------------------------------')
         exit()
 
 host = ''
 username = ''
 password = ''
-table = ''
+database = ''
 
 argv_check()
 
@@ -48,7 +48,7 @@ Location = '57 Beijing Rd, Huichuan Qu, Zunyi, Guizhou'
 Hotel_name = 'Shenzhenair'
 Room_Status = False
 
-db = MySQLdb.connect(host, username, password, table)
+db = MySQLdb.connect(host, username, password, database)
 cursor = db.cursor()
 cursor.execute("DELETE FROM hotels")
 db.commit()
