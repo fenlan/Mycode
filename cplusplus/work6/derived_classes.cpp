@@ -14,7 +14,7 @@
  *  of the derived classes to Base* pointers and call iam()
  *  through those pointers.
  * ------------------------------------------------------------
- *	Output:
+ *  Output:
  *      Base
  *      Derived1
  *      Derived2
