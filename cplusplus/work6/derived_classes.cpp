@@ -15,8 +15,8 @@
  *  through those pointers.
  * ------------------------------------------------------------
  *	Output:
- *		Base
- *		Derived1
+ *      Base
+ *      Derived1
  *      Derived2
  *      Base
  *      Derived1
