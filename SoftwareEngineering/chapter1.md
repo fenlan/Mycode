@@ -34,6 +34,9 @@ software system for the customer.
 - The `user` is the person or people who will actually use the system:the ones sit
 at the terminal or submit the data or read the output.
 
+## McCall Model
+![Mc-Call](images/Mc-Call.png)
+
 ## Elements of System
 - Activities and Objects
 - Relationships and the System Boundary
