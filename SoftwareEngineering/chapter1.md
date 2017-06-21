@@ -1,4 +1,4 @@
-# 1. Why Software Engineering?
+# Why Software Engineering?
 
 ## Software
 - Instruction
