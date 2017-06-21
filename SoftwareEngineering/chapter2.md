@@ -13,7 +13,7 @@ called the software life cycle.
 
 ## Software Process Models
 ### Waterfall Model
-![Waterfall Model](images/waterfall.png)
+![Waterfall Model](images/waterfall.PNG)
   **具体步骤**：`requirements analysis` -> `System Design` -> `Program Design` -> `Coding`
 -> `Unit & Integration Testing` -> `System Testing` -> `Acceptance Testing` ->
 `Opreation & Maintenance`<br>
@@ -25,7 +25,7 @@ called the software life cycle.
   **适用范围**：该模型适合于在软件需求比较明确、开发技术比较成熟、工程管理比较严格的场合使用。
 
 ### V Model
-![V Model](images/V-Model.png)
+![V Model](images/V-Model.PNG)
   V模型最终要的是 **The testing activities are related to analysis and design**,即测试团队
 的测试活动要与分析、设计团队相关联。<br>
   **缺陷**：V模型仅仅把测试过程作为在需求分析、系统设计及编码之后的一个阶段，忽视了测试对
@@ -35,7 +35,7 @@ called the software life cycle.
 种构件，需要更强调迭代的开发模型或者敏捷开发模型。
 
 ### Prototyping Model(原型法模型)
-![Prototyping Model](images/Prototyping.png)
+![Prototyping Model](images/Prototyping.PNG)
   原型法模型是针对瀑布模型提出来的一种改进方法。它的基本思想是从用户需求出发，快速建立一个原型，
 使用户通过这个原型初步表达自己的需求，并通过反复修改和完善，逐步靠近用户的全部需求，最终形成一个
 完全满足用户要求的新体系。<br>
@@ -50,7 +50,7 @@ called the software life cycle.
 处理过程不规范；大量批处理系统
 
 ### Spiral Model(螺旋模型)
-![Spiral Model](images/Spiral.png)
+![Spiral Model](images/Spiral.PNG)
   螺旋模型将瀑布模型和原型模型结合起来，并加入了风险分析，构成具有特色地模式，弥补了前两种模型地不足，
 使演化模型地一种具体形式。螺旋模型将工作划分为4个主要活动：制定计划、风险分析、实施工程、用户评价。
 4个活动螺旋式地重复执行，知道最终得到用户认可地产品。<br>
