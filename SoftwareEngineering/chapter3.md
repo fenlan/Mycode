@@ -13,7 +13,7 @@ tasks or activities to be done.
 > 里程碑：活动完成的特定时间点
 
 ## WBS
-> WBS:Work Break-down Structure(工作分解结构)
+> WBS:Work Break-down Structure(工作分解结构)<br>
 > From up to down and refinement(自顶向下，逐步求精)
 
 ![WBS](images/WBS)<br>
