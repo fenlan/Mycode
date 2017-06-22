@@ -16,7 +16,7 @@ tasks or activities to be done.
 > WBS:Work Break-down Structure(工作分解结构)<br>
 > From up to down and refinement(自顶向下，逐步求精)
 
-![WBS](images/WBS)<br>
+![WBS](images/WBS.png)<br>
 ![activity graphs](images/activityGraphs.png)<br>
 ![activity graphs](images/activityGraphs1.png)<br>
 ![Milestone](images/milestones.png)<br>
