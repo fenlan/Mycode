@@ -11,7 +11,7 @@ Process for capturing the requirements:
 - `Functional`: describes required behavior in terms of required activities
 > **功能需求**：描述需求活动的需求行为，比如输出行为、活动执行前后实体状态等。<br>
 
-![Functional](images/FunctionRequirements.png)<br>
+![Functional](images/functionRequirements.png)<br>
 - `Quality requirements or nonfunctional requirements`: describes some quality
 characteristic that software solution must possess
 > **质量需求或非功能需求**：描述一些软件解决方案必须具备的品质特点，比如快速反应时间、
