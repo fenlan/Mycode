@@ -11,13 +11,13 @@
 ## Documentation
 
 ### Internal Documentation
-- `Header Comment Block`
-- `Other Program Comments`
-- `Meaningful Variable Names and Statement Labels`
-- `Formatting to Enhance Understanding` -- 缩进
-- `Documenting Data`
+- Header Comment Block
+- Other Program Comments
+- Meaningful Variable Names and Statement Labels
+- Formatting to Enhance Understanding -- 缩进
+- Documenting Data
 
 ### External Documentation
-- `Describing the Program`
-- `Describing the Algorithms`
-- `Describing the Data`
+- Describing the Program
+- Describing the Algorithms
+- Describing the Data
