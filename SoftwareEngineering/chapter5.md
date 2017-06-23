@@ -38,9 +38,9 @@ requirements; the resulting plan is also called the design.
 modifying the data.
 ![Pipe-and-Filter](images/Pipe-and-Filter.png)<br>
 
-### Client-Sever
+### Client-Server
 - `Server` components offer services, and `clents` access them using a request/reply protocol
-![Client-Sever](images/Client-Sever.png)<br>
+![Client-Sever](images/Client-Server.png)<br>
 
 ### Peer-to-Peer or P2P(点对点)
 - `P2P` architecture is one in which each component executes as its own process and
