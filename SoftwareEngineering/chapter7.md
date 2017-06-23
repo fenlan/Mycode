@@ -7,6 +7,7 @@
   a Program Structure`}
 - `General Guidelines` {`Localizing Input and Output`, `Including Pseudocode`, `Revising and Rewriting, Not Patching`,
   `Reuse`}
+> 名词解释：Pseudocode -- 伪代码; Patching -- 修补，打补丁
 
 ## Documentation
 
