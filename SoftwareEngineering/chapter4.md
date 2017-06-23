@@ -56,9 +56,9 @@ can be used to build the system
 with the entity.
 - `relations`: the association between two entities.
 ![Entity-Relationship Diagrams](images/E-R.png)<br>
+![E-R notaton](images/E-RDiagramsNotation.png)<br>
 > Example: UML Class Diagrams(UML--统一建模语言)
 
-![E-R notaton](images/E-RDiagramsNotation.png)<br>
 ![UML](images/UML.png)<br>
 
 ## State Machines(状态机)
@@ -73,9 +73,9 @@ between the system and environment.
 - `Data-Flow Diagrams`: models Functionality and the flow of data from one function
 to another.
 ![Data-Flow Diagrams](images/Data-Flow.png)<br>
+![Data-Flow Diagrams notaton](images/Data-FlowNotation.png)<br>
 > Example: Use Cases(用例图)
 
-![Data-Flow Diagrams notaton](images/Data-FlowNotation.png)<br>
 ![Use Cases](images/UseCases.png)<br>
 ![Use Cases notaton](images/UseCasesNotation.png)<br>
 
