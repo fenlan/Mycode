@@ -5,7 +5,7 @@
 - `Algorithms`
 - `Data Structures` {`Keeping the Program Simple`, `Using a Data Structure to Determine
   a Program Structure`}
-- `General Guidelines` {`Including Pseudocode`, `Revising and Rewriting, Not Patching`,
+- `General Guidelines` {`Localizing Input and Output`, `Including Pseudocode`, `Revising and Rewriting, Not Patching`,
   `Reuse`}
 
 ## Documentation
