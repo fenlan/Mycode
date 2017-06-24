@@ -93,8 +93,8 @@ stated procedures and resources.
 - To enable the customers and users to determine if the system We built really
 meets their needs and expectations.
 - Types of Testing:
-> `Benchmark test`(基准测试): 用户准备一些系统安装过后将会进行的操作用例测试
-> `Pilot test`(试验测试): 在试验基础上安装系统，进行所有功能测试
-> `Alpha test`: 内部测试(In-House)
-> `Beta test`: 外部测试(On-Site)
-> `Parallel testing`: 并行测试(the new system operates in parallel with the previous version)
+> `Benchmark test`(基准测试): 用户准备一些系统安装过后将会进行的操作用例测试<br>
+> `Pilot test`(试验测试): 在试验基础上安装系统，进行所有功能测试<br>
+> `Alpha test`: 内部测试(In-House)<br>
+> `Beta test`: 外部测试(On-Site)<br>
+> `Parallel testing`: 并行测试(the new system operates in parallel with the previous version)<br>
