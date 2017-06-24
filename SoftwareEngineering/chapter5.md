@@ -61,7 +61,7 @@ store and associated data-accessing components.
 ### Layering(层次化)
 - `Layered systems` organize the system's software units into layers, each of which
 provides services to the layer above it and acts as client to the layer below.
-> Example: 网络分层路由。
+> Example: 网络分层路由。<br>
 > 因特网协议栈共有五层：应用层、传输层、网络层、链路层和物理层
 
 ### Architecture Quality Attributes(体系结构质量属性)

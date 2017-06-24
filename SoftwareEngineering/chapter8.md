@@ -54,7 +54,31 @@ paths within the component(s) to be sure that test object is working properly.
 - `路径覆盖`：程序流程中的独立路径各执行一次
 
 ## Unit Testing
-> 明天写详细内容
+- Test Object: component
+- Test Steps:
+> Examine code by reading through --> Find algorithm, data, syntax<br>
+> Complier the code --> Find remaining syntax faults<br>
+> Develop Test Case --> Find desired faults<br>
+
+- Test Method:
+> Examing the Code <br>
+> Proving Code Correct (书上写着的，老师说去掉)<br>
+> Test Program Component<br>
+
+### Example the Code
+- Code Walkthroughs
+> Present code and documentation to test team(递交代码和文档给测试团队)<br>
+> Team comments their correctness(团队评论代码和文档的正确性)<br>
+
+- Code Inspections(检查)
+> Step1: Meet the group: goals<br>
+> Step2: Individually second goal <br>
+> Inspect the code <br>
+> Group meeting: report<br>
+
+### Test Program Component
+- According to different test object we select different `test case`(测试用例)
+> `Test case`: A particular choice of input data to be used in testing a program <br> 
 
 ## Integration Testing
 - Bottom-Up Integration
