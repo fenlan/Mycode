@@ -76,7 +76,7 @@ drop the relation-name prefix. (就是说只在一个模式里出现的属性可
 
 ## Null Values
 - 数学运算符对null操作的结果仍然为null
-- 两个null值被认为是一样的
+- 两个null值被认为是一样的<br>
 ![Null Values](images/null.png)<br>
 ![Null Values](images/null1.png)<br>
 ![Null Values](images/null2.png)<br>
