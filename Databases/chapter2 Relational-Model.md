@@ -36,7 +36,7 @@ same, for all i. (两个关系的相同元的域相同，即是都是整型或�
 
 ### The Set-Difference Operation
 - The set-difference operation, denoted by `-`, allow us to find tuples that are in
-one relation but not in another.(同样需要满足并操作的条件)
+one relation but not in another.(同样需要满足并操作的条件)<br>
 ![Set-Difference Operation](images/set-difference.png)<br>
 
 ### The Cartesian-Product(笛卡尔乘积) Operation
