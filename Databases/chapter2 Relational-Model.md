@@ -87,8 +87,8 @@ drop the relation-name prefix. (就是说只在一个模式里出现的属性可
 ![Deletion](images/deletion1.png)<br>
 
 ### Insertion
-![Insertion](images/inserion.png)<br>
-![Insertion](images/inserion1.png)<br>
+![Insertion](images/insertion.png)<br>
+![Insertion](images/insertion1.png)<br>
 
 ### Update
 ![Update](images/update.png)<br>
