@@ -58,8 +58,7 @@ select * from loan order by amount desc, loan_number asc; /* 先amount降序，�
 
 ## String Operation
 - Percent(%): The % character matches any substring
-- Underscore(_ ): The _ character matches any character
-<br>
+- Underscore(_ ): The _ character matches any character<br>
 - `Perry%` matches any string begining with "Perry".<br>
 - `%idge%` matches any string containing "idge".<br>
 - `---` matches any string of exactly three character.<br>
