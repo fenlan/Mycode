@@ -48,7 +48,7 @@ one of the following holds:
 
 > 书上看了半天也没懂，所以在网上搜了一下，有一个讲得挺好的<br>
 
-![Normal Forms](http://www.cnblogs.com/ybwang/archive/2010/06/04/1751279.html)<br>
+[Normal Forms](http://www.cnblogs.com/ybwang/archive/2010/06/04/1751279.html)<br>
 补充：
 > 1NF 消除非主属性对码的部分函数依赖就是 2NF<br>
 > 2NF 消除非主属性对码的传递函数依赖就是 3NF<br>
