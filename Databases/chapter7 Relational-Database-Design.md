@@ -19,7 +19,7 @@ for all pairs of tuples t1 and t2 in γ such that t1[α] = t2[α], it is also th
 that t1[β] = t2[β].
 > 老师提供的ppt上有个很有意思的东西：<br>
 
-![Functional Dependencies Example](images/functional-dependence.png)<br>
+![Functional Dependencies Example](images/function-dependence.png)<br>
 > 这想说明什么呢？难道是为了给后面的概念做铺垫？最主要的是没有下文了<br>
 
 - `Closeure`:The set of all functional dependencies logically implied by F is the closure of F.
