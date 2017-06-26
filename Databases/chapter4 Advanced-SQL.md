@@ -68,4 +68,5 @@ revoke <privilege list> on <relation name or view name> from <user/role list>;
 ## Dynamic SQL
 > 大概意思就是其他语言调用数据库连接，比如用java, c, php, python等操作数据库<br>
 <br>
-> 还有一些扩展内容，我感觉不考，所以没写<br>
+
+还有一些扩展内容，我感觉不考，所以没写<br>
