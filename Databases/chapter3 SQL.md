@@ -124,6 +124,59 @@ where (not) exists (select * from depositor where depositor.customer_name = borr
 select T.customer_name from depositor as T
 where (not) unique (select R.customer_name from account, depositor as R
                     where T.customer_name = R.customer_name and R.account_number = account.account_number);
-
-
+/* The unique construct returns the value true if the argument subquery contains no duplicate tuples */
 ```
+
+## Complex Queries
+``` sql
+/* derived relations */
+select branch_name, avg_balance
+from (select branch_name, avg(balance)
+      from account
+      group by branch_name)
+      as branch_avg(branch_name, avg_balance)
+where avg_balance > 1200;
+
+with max_balance (value) as select max(balance) from account;
+select account_number from account, max_balance where account.balance = max_balance.value;
+/* The with clause, introduced in SQL:1999, is currently supports only by some databases. */
+/* nested subqueries would have made the query harder to read and understand. */
+/* without with clause, queries would be more complicated and harder to understand. */
+```
+
+## Views
+``` sql
+create view all_customer as
+  (select branch_name, customer_name
+   from depositor, account
+   where depositor.account_number = account.account_number)
+  union
+  (select branch_name, customer_name
+   from borrower, loan
+   where borrower.loan_number = loan.loan_number);
+
+select customer_name from all_customer where branch_name = 'Perryridge';
+
+create view perryridge_customer as
+  select customer_name from all_customer where branch_name = 'Perryridge';
+```
+
+## Modification of the Database
+``` sql
+delete from r where P;  /* delete tuples from a relation */
+
+insert into account values ('A-9732', 'Perryridge', 1200);
+insert into account (account_number, branch_name, balance) values ('A-9732', 'Perryridge', 1200);
+
+update account set balance = balance * 1.05 where balance >= 1000;
+update account set balance = balance * 1.05 where balance > (select avg(balance) from account);
+update account set balance = case
+                                when balance <= 10000 then balance * 1.05
+                                else balance * 1.06
+                             end;
+```
+
+## Transaction
+- `Commit work` commits the current transaction; that is, it makes the update performed.
+- `Rollback word` causes the current transaction to be rolled back; that is, it undoes
+all the updates performed.
