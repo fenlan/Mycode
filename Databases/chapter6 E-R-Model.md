@@ -27,7 +27,7 @@ from all other object.
 associated customer.<br>
 
 - `Double rectangles`, which represent weak entity sets
-![Entity-Relationship Diagrams](images/E-R-Diagram.png)<br>
+![Entity-Relationship Diagrams](images/E-R-Diagram.png)<br><br>
 ![Entity-Relationship Diagrams](images/E-R-Diagram1.png)<br>
 > A directed line(-->) signifying "one"<br>
 > An undirected line(--) signifying "many"<br>
