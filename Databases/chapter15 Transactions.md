@@ -36,17 +36,17 @@ application programmer who codes the transaction<br>
 
 ![States of transaction](images/state-transaction.png)<br>
 - Two options after it has been aborted:
-> It can `restart` the transaction, but only if the transaction was aborted as a result
+> 1.It can `restart` the transaction, but only if the transaction was aborted as a result
 of some hardware or software error that was not created through the internal logic of
 the transaction. A restart transaction is considered to be a new transaction.<br>
-> It can `kill` the transaction. It usually does so because of some internal logical
+> 2.It can `kill` the transaction. It usually does so because of some internal logical
 error that can be corrected only by rewriting the application program, or because
 the input was bad, or because the desired data were not found in the database.<br>
 
 ## Concurrent Executions(并发执行)
 - Good reason for allowing concurrecy:
-> Improved throughout and resource utilization(提高吞吐量和资源利用率)<br>
-> Reduced waitting time(减少等待时间)<br>
+> 1.Improved throughout and resource utilization(提高吞吐量和资源利用率)<br>
+> 2.Reduced waitting time(减少等待时间)<br>
 
 ## Recoverability
 - Recoverable Schedules(可恢复调度)
