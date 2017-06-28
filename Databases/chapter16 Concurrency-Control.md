@@ -81,3 +81,11 @@ then validation succeeds and Tj can be committed. Otherwise, validation fails an
 > 不想写了，写吐了，看书吧，感觉就是之前的综合一下，但还是提醒一下，老师的ppt这部分内容不少哦<br>
 
 ## Deadlock Handling(死锁处理)
+### 死锁预防
+- 预防死锁的方法
+> 1. 要求每个事务在开始之前封锁它的所有数据项，此外要么一次全部封锁要么全部不封锁。<br>
+> 2. 使用抢占与事务回滚。<br>
+
+- 死锁检测与恢复
+> 死锁检测：使用等待图(wait-for graph)的有向图来精确描述，当等待图中包含环时，系统中存在死锁。<br>
+> 死锁恢复：1. `选择牺牲者`;  2. `回滚`;  3. `饿死`。<br>
