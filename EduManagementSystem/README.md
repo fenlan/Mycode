@@ -17,25 +17,25 @@
 - 查询应被开除的学生(假定差2学分即被开除)
 
 ## E-R Diagram
-![E-R diagram](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/E-R.png)
+![E-R diagram](images/E-R.png)<br>
 
 ## Entity Sets
 profession<br>
-![profession](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/profession.png)<br>
+![profession](images/profession.png)<br>
 student<br>
-![student](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/student.png)<br>
+![student](images/student.png)<br>
 class<br>
-![class](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/class.png)<br>
+![class](images/class.png)<br>
 teacher<br>
-![teacher](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/teacher.png)<br>
+![teacher](images/teacher.png)<br>
 course<br>
-![course](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/course.png)<br>
+![course](images/course.png)<br>
 electives<br>
-![electives](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/electives.png)<br>
+![electives](images/electives.png)<br>
 teaching plan<br>
-![teaching plan](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/teaching_plan.png)<br>
+![teaching plan](images/teaching_plan.png)<br>
 score<br>
-![score](https://github.com/fenlan/Mycode/blob/master/edu_management_system/images/score.png)<br>
+![score](images/score.png)<br>
 
 ## Participant
 Design E-R diagram and entity sets with this guy [fanzhonghao](https://github.com/fanzhonghao)
