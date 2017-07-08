@@ -25,11 +25,11 @@
 // define a class with constructor and destructor
 class init {
 public:
-	init() {    
-		std::cout << "Initialize\n";    
+	init() {
+		std::cout << "Initialize\n";
 	}
 	~init() {
-		std::cout << "Clean up\n";    
+		std::cout << "Clean up\n";
 	}
 };
 
@@ -37,7 +37,7 @@ init i;			//the init() member function is working
 
 int main()
 {
-	std::cout << "Hello world!\n";    
+	std::cout << "Hello world!\n";
 }
 
 //After the main(), the scope of object i is over so
