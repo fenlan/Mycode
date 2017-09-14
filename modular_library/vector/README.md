@@ -50,4 +50,4 @@ cout << x << " / " << y << " = " << x / y << endl;
 [1]this guy's program [bretternst](https://github.com/bretternst/tcpppl_answers/blob/master/ch11/ex15.cpp)
 
 ## Update
-`2015.5.23` There is minimal math vector class. If possible, add more later
+`2017.5.23` There is minimal math vector class. If possible, add more later
