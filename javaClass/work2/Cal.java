@@ -8,7 +8,7 @@ import java.lang.InterruptedException;
 
 class Cal {
 	static final String[] MONTHS = { 
-		"January",  "February",		"March",
+		"January",	"February",		"March",
 		"April",	"May",			"June",
 		"July",		"August",		"September",
 		"October",	"November",		"December"
@@ -28,17 +28,17 @@ class Cal {
 			cmds[2] = "cal | tail -n 6";  
 		}
 
-        Process pro = Runtime.getRuntime().exec(cmds);  
-        pro.waitFor();  
-        InputStream in = pro.getInputStream();  
-        BufferedReader read = new BufferedReader(new InputStreamReader(in));  
-        String line = null;  
+		Process pro = Runtime.getRuntime().exec(cmds);  
+		pro.waitFor();  
+		InputStream in = pro.getInputStream();  
+		BufferedReader read = new BufferedReader(new InputStreamReader(in));  
+		String line = null;  
 
-        System.out.println(MONTHS[3] + " 2025");
-        System.out.println("Su Mo Tu We Th Fr Sa");
+		System.out.println(MONTHS[3] + " 2025");
+		System.out.println("Su Mo Tu We Th Fr Sa");
 
-        while((line = read.readLine())!=null){  
-            System.out.println(line);  
-        }
+		while((line = read.readLine())!=null){  
+			System.out.println(line);  
+		}
 	}
 }
