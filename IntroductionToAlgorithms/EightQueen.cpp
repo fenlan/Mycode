@@ -20,7 +20,7 @@ void print()
 bool canPlaceQueen(int k)
 {
     for (int i = 1; i < k; i++)
-        if (queen[i] == queen[k] || abs(k-1) == abs(queen[k]-queen[i]))
+        if (queen[i] == queen[k] || abs(k-i) == abs(queen[k]-queen[i]))
             return false;
     return true;
 }
@@ -28,16 +28,15 @@ bool canPlaceQueen(int k)
 void eightQueen_1()
 {
     int k = 1;
-    while (k >= 1) {
-        while (queen[k] <= 7) {
+    while (k > 0) {
+        queen[k] += 1;
+        while (queen[k] <= 8 && !canPlaceQueen(k))
             queen[k] += 1;
-            if (k == 8 && canPlaceQueen(k))
+        if (queen[k] <= 8)
+            if (k == 8)
                 print();
-            else if (canPlaceQueen(k))
-                k++;
-        }
-        queen[k] = 0;
-        k--;
+            else { k++; queen[k] = 0; }
+        else    k--;
     }
 }
 
