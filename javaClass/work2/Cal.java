@@ -15,13 +15,15 @@ class Cal {
 	};
 
 	public static void main(String[] args) throws IOException, InterruptedException {
+		int year = 0;
+		int month = 0;
 		String[] cmds = new String[3];
 		cmds[0] = "/bin/sh";
 		cmds[1] = "-c";
 		
 		if (args.length == 2) {
-			int month = Integer.parseInt(args[0]);
-			int year = Integer.parseInt(args[1]);
+			month = Integer.parseInt(args[0]);
+			year = Integer.parseInt(args[1]);
 			cmds[2] = "cal " + month + " " + year + " | tail -n 6";
 		}
 		else {
@@ -34,7 +36,7 @@ class Cal {
 		BufferedReader read = new BufferedReader(new InputStreamReader(in));  
 		String line = null;  
 
-		System.out.println(MONTHS[3] + " 2025");
+		System.out.println(MONTHS[month-1] + " " + year);
 		System.out.println("Su Mo Tu We Th Fr Sa");
 
 		while((line = read.readLine())!=null){  
